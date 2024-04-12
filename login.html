@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          margin: 0;
+        }
+    
+        form {
+          width: 300px;
+          padding: 20px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          margin: auto; /* Center the form */
+        }
+    
+        label {
+          display: block;
+          margin-bottom: 8px;
+        }
+    
+        input {
+          width: 100%;
+          padding: 8px;
+          margin-bottom: 16px;
+          box-sizing: border-box;
+        }
+    
+        button {
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          width: 100%;
+        }
+    
+        button:hover {
+          background-color: #45a049;
+        }
+      </style>
+</head>
+<body>
+
+
+    <form id="loginForm">
+        <h1>Log In</h1>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    
+        <button type="button" onclick="redirectToAnotherPage()">Login</button>
+      </form>
+    
+      <script>
+        // function validateLogin() {
+        //   var username = document.getElementById("username").value;
+        //   var password = document.getElementById("password").value;
+    
+        //   // Simple validation, you can replace this with more secure methods
+        //   if (username === "" || password === "") {
+        //     alert("Please enter both username and password.");
+        //   } else {
+        //     // You can add your authentication logic here
+        //     alert("Login successful!");
+        //     // Redirect to another page or perform further actions
+        //   }
+        // }
+    
+    
+    
+    
+        function redirectToAnotherPage() {
+          // Redirect to another page, change 'destination.html' to your actual page
+          alert("Login successful!");
+          window.location.href = 'index.html';
+        }
+      </script>
+    
+</body>
+</html>
+
+
+
+
